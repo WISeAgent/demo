@@ -18,8 +18,6 @@ helloworld
 
 This is an example of how to embed HTML content from an external page in a markdown file. You can use a static site generator like DocFX to include the HTML content from another file or URL in your markdown file. You need to use a special marker to indicate the start and end of the HTML inclusion. For example:
 
-{% include_relative sample.com %}
-
 <iframe src="https://sample.com" width="300" height="300"></iframe>
 
 
