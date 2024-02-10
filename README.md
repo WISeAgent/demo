@@ -48,5 +48,5 @@ This is an example of how to embed HTML content from an external page in a markd
 This is an example of how to embed raw HTML with a script tag that prints alert(1) in a markdown file. Script tags can execute JavaScript code in the browser, which may show an alert box with the number 1 when the markdown file is rendered as HTML. However, be careful when using script tags in markdown, as they may pose security risks or cause unexpected behavior.
 
 <script>
-alert(1);
+alert("greetings");
 </script>
