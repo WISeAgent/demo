@@ -33,7 +33,8 @@ This is an example of how to embed HTML content from an external page in a markd
 {% include_relative sample.com %}
 ```
 
-<iframe src="https://example.com/" width="800" height="600"></iframe>
+<iframe src="https://example.com/" width="300" height="300"></iframe>
+
 
 ## 3. Embed raw HTML with a script tag that prints alert(1)
 
