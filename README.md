@@ -53,10 +53,10 @@ However, please note that some websites may not allow embedding their content in
 
 ```MD
 {% raw %}
-   <iframe src="https://wwang.atlassian.net/wiki/spaces/~13820020/pages/669057097/Dynamic-Link+Libraries#Introduction" width="300" height="300"></iframe>
+   <iframe src="https://docs.github.com/en/pages/getting-started-with-github-pages" width="300" height="300"></iframe>
 {% endraw %}
 ```
-<iframe src="https://wwang.atlassian.net/wiki/spaces/~13820020/pages/669057097/Dynamic-Link+Libraries#Introduction" width="300" height="300"></iframe>
+<iframe src="https://docs.github.com/en/pages/getting-started-with-github-pages" width="300" height="300"></iframe>
 
 
 
