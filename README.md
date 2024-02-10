@@ -29,7 +29,7 @@ This is an example of how to embed HTML content from an external page in a markd
 < !-- END INCLUDE -->
 ```
 
-**Sample for Jekyll** if the included file doesn't exist, it'll failed the the deploy task in github action
+**Sample for Jekyll** If the included file doesn't exist, it'll failed the the deploy task in github action
 
 > sample error reported in https://github.com/WISeAgent/demo/actions/runs/7850893429  
 > build
