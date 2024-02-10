@@ -48,12 +48,15 @@ This is an example of how to embed HTML content from an external page in a markd
 | Error: Could not locate the included file 'sample.com' in any of ["/github/workspace/"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode. 
 
 **iframe** 
+This will create a frame that displays the content from external page within your static page.
+However, please note that some websites may not allow embedding their content in an iframe, due to security or privacy reasons. They may use the X-Frame-Options HTTP header to prevent cross-origin framing. In that case, you will see an error message instead of the content. youtube.com is an example.
+
 ```MD
 {% raw %}
-   <iframe src="https://youtu.be/1fbU_MkV7NE?si=8nvkmJajDIi8uZHc" width="300" height="300"></iframe>
+   <iframe src="https://wwang.atlassian.net/wiki/spaces/~13820020/pages/669057097/Dynamic-Link+Libraries#Introduction" width="300" height="300"></iframe>
 {% endraw %}
 ```
-<iframe src="https://youtu.be/1fbU_MkV7NE?si=8nvkmJajDIi8uZHc" width="300" height="300"></iframe>
+<iframe src="https://wwang.atlassian.net/wiki/spaces/~13820020/pages/669057097/Dynamic-Link+Libraries#Introduction" width="300" height="300"></iframe>
 
 
 
