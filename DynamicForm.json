@@ -1,0 +1,6 @@
+{
+    "name1": "value1",
+    "name2": "value2",
+    "dropdown1": ["option1", "option2", "option3"],
+    "dropdown2": ["optionA", "optionB", "optionC"]
+  }
