@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+</head>
+<body>
+    <form id="dynamicForm"></form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('mock.json')
+                .then(response => response.json())
+                .then(jsonData => {
+                    const form = document.getElementById('dynamicForm');
+
+                    // Create text boxes
+                    for (let key in jsonData) {
+                        if (typeof jsonData[key] === 'string') {
+                            const label = document.createElement('label');
+                            label.textContent = key;
+                            form.appendChild(label);
+
+                            const input = document.createElement('input');
+                            input.type = 'text';
+                            input.name = key;
+                            input.value = jsonData[key];
+                            form.appendChild(input);
+                            form.appendChild(document.createElement('br'));
+                        }
+                    }
+
+                    // Create dropdowns
+                    for (let key in jsonData) {
+                        if (Array.isArray(jsonData[key])) {
+                            const label = document.createElement('label');
+                            label.textContent = key;
+                            form.appendChild(label);
+
+                            const select = document.createElement('select');
+                            select.name = key;
+                            jsonData[key].forEach(optionValue => {
+                                const option = document.createElement('option');
+                                option.value = optionValue;
+                                option.textContent = optionValue;
+                                select.appendChild(option);
+                            });
+                            form.appendChild(select);
+                            form.appendChild(document.createElement('br'));
+                        }
+                    }
+                });
+        });
+    </script>
+</body>
+</html>
